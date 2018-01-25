@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="pane_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hot.pwm.controller.PwdManagerController">
+   <children>
+      <TableView fx:id="pwd_tv" prefHeight="300.0" prefWidth="669.0">
+        <columns>
+          <TableColumn fx:id="tc_info" prefWidth="75.0" text="描述" />
+          <TableColumn fx:id="tc_account" prefWidth="103.0" text="账号" />
+            <TableColumn fx:id="tc_pwd" prefWidth="72.0" text="密码" />
+            <TableColumn fx:id="tc_phone" prefWidth="103.0" text="手机" />
+            <TableColumn fx:id="tc_email" prefWidth="75.0" text="email" />
+            <TableColumn fx:id="tc_more" prefWidth="89.0" text="备注" />
+            <TableColumn fx:id="tc_status" prefWidth="75.0" text="状态" />
+            <TableColumn fx:id="tc_operate" prefWidth="75.0" text="操作" />
+        </columns>
+      </TableView>
+      <Button fx:id="bt_add" layoutX="28.0" layoutY="351.0" mnemonicParsing="false" text="添加" />
+      <Button fx:id="bt_save" layoutX="497.0" layoutY="351.0" mnemonicParsing="false" text="保存关闭" />
+   </children>
+</Pane>

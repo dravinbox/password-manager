@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  <configuration>
+  		<settings>
+  			<setting name="mapUnderscoreToCamelCase" value="true"/>
+  			 <!-- 打印查询语句 -->
+			<!-- <setting name="logImpl" value="STDOUT_LOGGING" /> -->
+  		</settings> 
+  		<typeAliases>
+  			<package name="com.hot.pwm.bean"/>
+  		</typeAliases>
+  		<plugins>
+  			<plugin interceptor="com.github.pagehelper.PageInterceptor">
+  				<!-- 寻呼参数的合理化，默认值为false。当此参数设置为true，pageNum <= 0将查询第一页 PageNum> pages（超过总数），将查询最后一页。默认情况下false，查询直接基于参数。 -->
+  				<property name="reasonable" value="true"/>
+  			</plugin>
+  		</plugins>
+  		
+  </configuration>
